@@ -1,0 +1,414 @@
+/* === Google Font === */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* === Common CSS === */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  border: none;
+  color: #fff;
+  padding: 12px 40px;
+  transition: all 0.2s ease;
+}
+
+.button-filled {
+  background: #e76f51;
+  border-radius: 5px;
+}
+
+.button-outline {
+  border: 2px solid #e76f51;
+  color: #555555;
+  border-radius: 100px;
+}
+
+.button-filled:hover {
+  background: #b95941;
+}
+
+.button-outline:hover {
+  background-color: #e76f51;
+  color: #fff;
+}
+
+.section-padding {
+  padding: 90px 0;
+}
+
+.section-heading {
+  font-weight: 600;
+  font-size: 46px;
+  margin-bottom: 10px;
+}
+
+.section-heading span {
+  color: #e76f51;
+}
+
+.sub-heading {
+  color: #e76f51;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 100px;
+}
+
+.sub-heading::after {
+  content: "";
+  display: block;
+  background-color: #e76f51;
+  width: 60px;
+  border-bottom: 1px solid #e76f51;
+  margin: 5px auto 0;
+}
+
+/* === Header CSS === */
+.header,
+.hero {
+  background: #264653;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.navbar-nav li.nav-item:not(:last-child) {
+  margin-right: 36px;
+}
+
+.navbar-nav li.nav-item:last-child {
+  margin-left: 64px;
+}
+
+/* === Hero CSS === */
+.hero {
+  padding: 68px 0 98px;
+}
+
+.hero-text h4 {
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.hero-text h1 {
+  font-weight: 600;
+  font-size: 48px;
+}
+
+.hero-text p {
+  line-height: 24px;
+  color: #e0e0e0;
+  margin: 18px 0 20px;
+}
+
+.hero-img img {
+  background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  max-width: 552px;
+  width: 100%;
+}
+
+/* === Features CSS === */
+.features {
+  padding: 65px 0 160px;
+}
+
+.feature-img img {
+  max-width: 288px;
+  width: 100%;
+}
+
+.grayscale-img img {
+  filter: grayscale(100%);
+}
+
+/* === News CSS === */
+.news {
+  background-color: #f5f5f5;
+}
+
+.news-card {
+  padding: 20px;
+  height: 100%;
+}
+
+/* === Client CSS === */
+.clients {
+  margin-top: 90px;
+}
+
+.client-card {
+  max-width: 352px;
+  width: 100%;
+  padding: 40px 35px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  height: 100%;
+}
+
+.client-img {
+  width: 150px;
+}
+
+.card-text {
+  color: #6c6c6c;
+  margin: 30px 0 15px;
+}
+
+.rating i {
+  color: #e76f51;
+}
+
+.client-name,
+.client-designation {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.client-name {
+  color: #23a6f0;
+}
+
+.client-designation {
+  color: #252b42;
+}
+
+/* === Faq CSS === */
+.faq {
+  padding: 140px 0 160px;
+}
+
+.faq .section-heading {
+  margin-bottom: 100px;
+}
+
+.frequently-img img {
+  max-width: 430px;
+  width: 100%;
+  display: block;
+}
+
+.faq .accordion .accordion-item {
+  border: 2px solid #d5e5fb;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.faq .accordion-body {
+  color: #7e848c;
+}
+
+.faq .accordion .accordion-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+/* === Mobile App CSS === */
+.app-download {
+  background-image: url("../images/download-app-bg.jpg");
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+.app-download .section-title h2 {
+  color: #ffffff;
+}
+
+.app-download::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #264653;
+  opacity: 0.8;
+}
+
+.app-download-item {
+  background-color: #fff;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.app-download-item i {
+  font-size: 30px;
+  color: #e76f51;
+  display: inline-block;
+}
+
+.app-download-item h3 {
+  font-size: 22px;
+  margin: 20px 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.app-download-item p {
+  color: #555555;
+  font-weight: 300;
+  margin: 0 0 30px;
+  line-height: 26px;
+}
+
+/* === Contact CSS === */
+.contact {
+  background-color: #f5f5f5;
+}
+
+.contact-info h3 {
+  font-size: 22px;
+  margin: 0 0 40px;
+  font-weight: 500;
+}
+
+.contact-info-item {
+  position: relative;
+  padding-left: 55px;
+  margin-bottom: 30px;
+}
+
+.contact-info-item i {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  color: #e76f51;
+  border: 1px solid #264653;
+  text-align: center;
+  line-height: 38px;
+}
+
+.contact-info-item h4 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0 0 10px;
+}
+
+.contact-info-item p {
+  font-weight: 300;
+  margin: 0;
+  line-height: 26px;
+  color: #555555;
+}
+
+.contact-form .form-group {
+  margin-bottom: 25px;
+}
+
+.contact-form .form-control,
+.modal-body .form-control {
+  height: 52px;
+  border: 1px solid transparent;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  padding: 0 24px;
+  background-color: #fff;
+  transition: all 0.5s ease;
+}
+
+.contact-form textarea.form-control {
+  height: 140px;
+  padding-top: 12px;
+  resize: none;
+}
+
+.contact-form .form-control:focus,
+.modal-body .form-control:focus {
+  border-color: #e76f51;
+}
+
+/* === Footer Css === */
+.footer {
+  background-color: #0b0d17;
+  padding: 60px 0;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.license ul li:not(:last-child),
+.footer-nav ul li:not(:last-child) {
+  margin-right: 24px;
+}
+
+.footer-nav {
+  margin: 15px 0;
+}
+
+.follow {
+  color: #e76f51;
+}
+
+.social-icons {
+  text-align: center;
+}
+
+.social-icons i {
+  font-size: 34px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.social-icons i:hover {
+  transform: scale(1.12);
+}
+
+.social-icons i:not(:last-child) {
+  margin-right: 15px;
+}
+
+.social-icons i:first-child {
+  color: #4267b2;
+}
+
+.social-icons i:nth-child(2) {
+  color: #00acee;
+}
+
+.social-icons i:nth-child(3) {
+  color: #bc2a8d;
+}
+
+.social-icons i:last-child {
+  color: #0e76a8;
+}
+
+.copyright p {
+  color: #d9dbe1;
+  margin-top: 20px;
+}
+
+.copyright p span,
+.license ul li a span {
+  color: #e76f51;
+}
+
+/* === Modal Css === */
+
+.modal-body {
+  background-color: #f5f5f5;
+}

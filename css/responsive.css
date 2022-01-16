@@ -1,0 +1,88 @@
+/* === Media Query for large and extra large devices === */
+@media screen and (max-width: 1200px) {
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .section-heading {
+    font-size: 34px;
+  }
+
+  .features {
+    padding: 65px 0 120px;
+  }
+
+  .faq {
+    padding: 100px 0 120px;
+  }
+}
+
+/* === Media Query for Tablet portrait and landscape mode ===*/
+@media screen and (max-width: 992px) {
+  .sub-heading {
+    margin-bottom: 65px;
+  }
+
+  .section-padding {
+    padding: 65px 0;
+  }
+
+  .navbar-nav li.nav-item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .navbar-nav li.nav-item:last-child {
+    margin-left: 0;
+  }
+
+  .hero {
+    padding: 46px 0;
+  }
+
+  .hero-text {
+    margin-bottom: 50px;
+  }
+
+  .features {
+    padding: 65px 0 80px;
+  }
+
+  .clients {
+    margin-top: 65px;
+  }
+
+  .faq {
+    padding: 80px 0 65px;
+  }
+
+  .frequently-img img {
+    margin: 0 auto;
+  }
+
+  .faq .section-heading {
+    margin-bottom: 65px;
+  }
+}
+
+/* === Media Query for Mobile and Small devices ===*/
+@media screen and (max-width: 576px) {
+  .footer {
+    padding: 40px 0;
+  }
+
+  .button {
+    padding: 10px 30px;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .section-heading {
+    font-size: 30px;
+  }
+
+  .follow {
+    margin-top: 20px;
+  }
+}
